@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Автовикторина</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Тест на знание автомобилей</h1></header>
+<ul class="list-1">
+ <li class="list_element_1"><a href="easy-mode.html">Легко</a></li>
+ <li class="list_element_2"><a href="medium-mode.html">Средне</a></li>
+ <li class="list_element_3"><a href="hard-mode.html">Сложно</a></li>
+</ul>
+
+<div class="vaz">
+ <img src="img/vaz_anim.png" height="13%" width="13%">	
+</div>
+
+<div class="BMW">
+	<img src="img/BMW_.png" height="10%" width="10%">
+</div>
+
+
+
+
+ <script type="text/javascript">
+ 	var list_element_1 = document.querySelector(".list_element_1")
+	var easy_mode_win = localStorage.getItem('easy_winner')
+ 	if( easy_mode_win ){
+ 	list_element_1.classList.add('passed')
+	}
+
+	var list_element_2 = document.querySelector(".list_element_2")
+	var medium_mode_win = localStorage.getItem('medium_winner')
+ 	if( medium_mode_win ){
+ 	list_element_2.classList.add('passed')
+	}
+
+	var list_element_3 = document.querySelector(".list_element_3")
+	var hard_mode_win = localStorage.getItem('hard_winner')
+ 	if( hard_mode_win ){
+ 	list_element_3.classList.add('passed')
+	}
+
+	if(easy_mode_win && medium_mode_win && hard_mode_win ) {
+// Кубок вручить
+	}
+
+ </script>
+</body>
+</html>
