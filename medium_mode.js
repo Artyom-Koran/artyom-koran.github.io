@@ -165,8 +165,7 @@ $("#radioForm").submit(function( event ) {
 
  	
  	if(selectedVariant == 1){
-  	alert('Правильно!')
-  //	variant.classList.add("right")
+  	alert('Ответ верный.')
   	i = i + 1
 
 document.getElementById("p1").innerHTML = cards[i].number;
@@ -178,7 +177,7 @@ radio_value(cards[i].radioV_1, cards[i].radioV_2, cards[i].radioV_3)
 
 
   } else if (selectedVariant == 0 && insure == 0) {
-  	alert('Нет! Ты проиграл!')
+  	alert('Ответ неверный.')
   	document.location.href = "index.html"
   } else if(selectedVariant == 0 && insure == 1){
   	alert('Ответ невернвый. Страховка использована')
