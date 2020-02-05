@@ -5,12 +5,14 @@ body {
 }
 
 
+.menu {
+  white-space: nowrap;
+}
 
 .Mode {
   font-size: 2em;
   margin-left: 1em;
 }
-
 
 article {
   width: 80%;
@@ -24,8 +26,8 @@ article {
 }
 
 img {
-  width: 40%;
-  height: 40%;
+  max-width: 40%;
+  max-height: 40%;
   border-radius: 1em;
   min-height: 275px;
   min-width: 435px;
@@ -122,4 +124,17 @@ li {
 
 .variant:checked {
   border: 6px solid green;
+}
+
+
+@media (max-width: 660px){
+  article {
+    margin:0 auto;
+  }
+
+  .Mode {
+    margin: 0;
+    text-align: center;
+  }
+
 }
