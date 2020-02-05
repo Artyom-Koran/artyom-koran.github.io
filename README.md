@@ -1,2 +1,3 @@
 # Artyom-Koran.github.io
-Не готово.
+
+Не поддерживается Microsoft Edge и Safari
